@@ -1,0 +1,18 @@
+.greeting-time {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    bottom: 30px;
+    color: white;
+    font-size: 2px;
+  }
+  
+  #greeting {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  #time {
+    margin-top: 10px;
+    font-size: 18px;
+  }
