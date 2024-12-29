@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.js
+import React, { useState } from 'react';
+import 'nes.css/css/nes.min.css';
+import './App.css';
+import Homepage from './components/Homepage/Homepage.jsx';
+import Projects from './components/Projects/Projects.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeComponent, setActiveComponent] = useState('home');  // State to track which component is active
+
+  const renderComponent = () => {
+    switch (activeComponent) {
+      case 'home':
+        return <Homepage />;
+      case 'projects':
+        return <Projects />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Homepage />;
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      {/* Header with pink background */}
+      <header className="app-header">
+        <div className="buttons">
+          <button className="nes-btn is-primary" onClick={() => setActiveComponent('home')}>Home</button>
+          <button className="nes-btn is-success" onClick={() => setActiveComponent('projects')}>Projects</button>
+          <button className="nes-btn is-error" onClick={() => setActiveComponent('contact')}>Contact</button>
+        </div>
+      </header>
+
+      {/* Render the active component */}
+      {renderComponent()}
+    </div>
+  );
 }
 
-export default App
+export default App;
