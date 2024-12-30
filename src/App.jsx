@@ -6,9 +6,11 @@ import Homepage from './components/Homepage/Homepage.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Time from './components/Time/Time.jsx';
+import Intro from './components/Intro.jsx/Intro.jsx';
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState('home');  // State to track which component is active
+  const [activeComponent, setActiveComponent] = useState('home'); 
+  const [showIntro, setShowIntro] = useState(true); 
 
   const renderComponent = () => {
     switch (activeComponent) {
@@ -22,21 +24,23 @@ function App() {
         return <Homepage />;
     }
   };
+  if (showIntro) {
+    return <Intro onFinish={() => setShowIntro(false)} />;
+  }
 
   return (
     <div className="App">
-      {/* Header with pink background */}
       <header className="app-header">
         <Time/>
         <div className="buttons">
-          <button className="nes-btn is-primary" onClick={() => setActiveComponent('home')}>Home</button>
+          <button className="nes-btn is-success" onClick={() => setActiveComponent('home')}>Home</button>
           <button className="nes-btn is-success" onClick={() => setActiveComponent('projects')}>Projects</button>
-          <button className="nes-btn is-error" onClick={() => setActiveComponent('contact')}>Contact</button>
+          <button className="nes-btn is-success" onClick={() => setActiveComponent('contact')}>Contact</button>
         </div>
       </header>
 
       <footer className="app-footer">
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <p>© 2024 Deena. All rights reserved.</p>
         <div className="footer-links">
           <a href="https://github.com/dot-Deena" target="_blank" rel="noopener noreferrer">
           <i class="nes-icon github is-medium"></i></a>

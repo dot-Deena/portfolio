@@ -1,70 +1,91 @@
 * {
   font-family: 'Press Start 2P', cursive; /* Apply to all elements */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border don't affect element size */
 }
 
 .App {
   font-family: "Pirata One", serif;
 }
-.press-start-2p-regular {
-  font-family: "Press Start 2P", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-/* Header styles */
 .app-header {
-  background-image: url('src/assets/back.gif'); /* Path to your GIF */
-  background-size: cover; /* Ensures the GIF covers the entire header */
-  background-position: center; /* Centers the GIF */
-  /* background-color: #e87fa2; Pink background */
-  padding: 60px;
+  background-image: url("src/assets/back.gif");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   z-index: 10;
+  border-bottom-left-radius: 100% 50px;
+  border-bottom-right-radius: 100% 50px;
+  height: 100px; /* Adjust header height */
+  margin: 0;
+  padding:100px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .buttons {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.nes-btn {
-  margin: 0 10px;
+  justify-content: space-between; /* Distribute buttons with space between them */
+  gap: 20px; /* Set the desired gap between buttons */
+  width: 40%; /* Adjust the width to control button positioning */
+  margin: 0 auto; /* Center the buttons */
   height: 70px;
-  width: 150px;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.App > div {
-  padding-top: 200px;
+  margin-top: -20px;
 }
 
 .app-footer {
-  background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 80px;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  background-image: url("src/assets/back.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 100% 80px;
+  border-top-right-radius: 100% 80px;
+  z-index: 10;
+  height: 100px;
+}
+
+p {
+  margin-top: -30px; /* Push the text up */
+  margin-bottom: 10px;
 }
 
 .footer-links {
-  margin-top: 10px;
+  margin-top: -5px; /* Push the content up by 20px */
 }
 
 .footer-links a {
-  color: #00bcd4;
-  text-decoration: none;
   margin: 0 10px;
   font-size: 14px;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.page-container {
+  padding: 20px;
+  min-height: calc(100vh - 200px); /* Subtract header and footer height */
+  margin-top: 100px; /* Offset the header height */
+  margin-bottom: 100px; /* Offset the footer height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+body {
+  overflow: hidden; /* Prevent page scrolling */
 }

@@ -1,0 +1,18 @@
+.contact-content {
+    padding: 100px;
+    border-radius: 10px;
+    height: 900px;
+    width: 1459px;
+    background-image: url("src/assets/clouds.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    position: relative; /* Allows absolute positioning of content inside */
+    overflow: hidden;
+  }

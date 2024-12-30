@@ -1,10 +1,14 @@
 .homepage {
-    padding: 2rem;
-    background-color: #f5f5f5;
+    padding: 90px;
+    min-height: 80vh;
+    min-width: 145vh;
+    background-color: #000000;
+    background-image: url("src/assets/kirby3.gif");
     border-radius: 5px;
-    margin-top: 100px;
-    margin-bottom: 10px;
-    background-image: url("");
+    margin-top: 1px;
+    margin-bottom: 90px;
+    background-size: cover;
+    background-position: center;
   }
   
   .main-content {
@@ -13,32 +17,32 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 30px;
-    margin-bottom: ;
-    background-image: url("src/assets/header1.gif");
+    margin-top: 80px;
     border-radius: 10px;
-    background-position: center; 
-
+    
+   
   }
   
   .left-side {
     width: 30%;
     text-align: center;
-    background-image: url("src/assets/header1.gif");
     border-radius: 10px;
     background-position: right; 
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+  .nes-btn.is-warning{
+    height:50px;
+    width: 150px;
+  }
   .profile-picture img{
     padding: 30px;
     width: 300px;
     height: 300px;
     border-radius: 140px;
     object-fit: cover;
-    margin-bottom: 1px;
-    
+    margin-bottom: 10px;
+    margin-top:50px;
 
   }
   
@@ -46,7 +50,7 @@
     font-size: 1.5rem;
     margin-bottom: 10px;
     margin-top: 10px;
-    color: #f5f5f5;
+    color: black;
   }
   
   .skills-logos img {
@@ -61,13 +65,10 @@
     padding-top: 20px;
    
   }
-  
-  .intro h1 {
-    font-size: 2rem;
-    margin-bottom: 50px;
-    margin-top: 40px;
+  .nes-balloon.from-left{
+    margin-top: 0px;
   }
-  
+
   .certificates h2 {
     font-size: 1.5rem;
     margin-top: 20px;
@@ -77,3 +78,95 @@
   .certificates p {
     margin: 5px 0;
   }
+
+  /* GLOBAL STYLES */
+body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.intro h1 {
+  padding: 1px;
+  font-size: 2rem;
+  margin-bottom: 1px;
+  margin-top: 10px;
+  color: black;
+  font-family: "Press Start 2P", serif;
+  overflow: hidden;
+  border-right: .10em solid black; /* The typwriter cursor */
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+/* diablog box */
+/* Dialog box styling */
+.nes-dialog {
+  border-radius: 10px;
+  padding: 20px;
+  background-image: url("src/assets/bric.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  /* Centering the dialog */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, 0%);
+  z-index: 1000;
+  width: 30%;
+  max-width: 500px;
+}
+
+.nes-dialog form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.dialog-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dialog-menu button {
+  margin-right: 60px;
+  margin-left:100px;
+  height: 50px;
+  width: 100px;
+}
+
+.skills-dialog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skills-dialog img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+  

@@ -1,9 +1,16 @@
 .projects {
-    padding: 2rem;
-    background-color: #f5f5f5;
+    padding: 100px;
     border-radius: 10px;
-    margin-top: 100px;
-    color: #f5f5f5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 900px;
+    width: 1459px;
+    background-image: url("src/assets/kirby4.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    min-width: 145vh;
 }
 
 .main-content {
@@ -11,19 +18,19 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 30px;
-    background-image: url('src/assets/header.gif'); 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     border-radius: 10px;
     height: 500px;
-    width: 100%;
-    margin-bottom: 140px;
+    width: 80%;
+    margin-bottom: 10px;
+
+
 }
 
 .left-side {
     width: 30%;
     text-align: center;
-    background-image: url("src/assets/header1.gif");
     border-radius: 10px;
     background-position: center; 
     height: 500px;
@@ -55,4 +62,19 @@
         width: 100%;
         text-align: center;
     }
+}
+.project-list .nes-btn {
+        margin: 0 10px;
+        height: 50px;
+        width: 150px;
+        font-family: 'Press Start 2P', cursive;
+        display: block; 
+        margin: 50px auto; 
+
+}
+.project-list h2{
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 30px;
 }
