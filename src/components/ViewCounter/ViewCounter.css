@@ -1,0 +1,21 @@
+/* src/components/ViewCounter/ViewCounter.css */
+.view-count-container {
+    position: relative; /* Make the container relative for absolute positioning of the view count */
+  }
+  
+  .nes-badge {
+    position: relative; /* Ensure the badge is positioned relative to the container */
+  }
+  
+  .view-count {
+    position: absolute;
+    top: -5px;  /* Adjust this value to position the count above the badge */
+    right: -5px; /* Adjust this value to position the count on the right */
+    background-color: red; /* Set a background color for the view count */
+    color: white;
+    font-size: 12px;
+    padding: 3px 5px;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 50px;
+  }

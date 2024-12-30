@@ -1,0 +1,67 @@
+ /* pokeball */
+ @keyframes float {
+    0% {
+      top: 20px; /* Start at the top */
+    }
+    50% {
+      top: 90%; /* Move to 90% of the screen height */
+    }
+    100% {
+      top: 20px; /* Return to the top */
+    }
+  }
+.floating-egg {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: float 6s ease-in-out infinite;
+    z-index: 1000; /* hover pevr all ementers */
+  }
+
+/* dialog box setings */
+.pokeball {
+    max-width: 300px; /* Adjust this width as per your preference */
+    min-height: 200px; /* Set a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the content and button are spaced properly */
+  }
+  
+  /* Style the dialog content */
+.pokeball form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+.pokeball.nes-dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    z-index: 2000;
+    padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 190px;
+    border-radius: 10px;
+  }
+  
+  .nes-dialog .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1px;
+  }
+  .nes-dialog .dialog-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 40px;
+  }
+  .nes-dialog .randomfact{
+    margin-top: -5px;
+  }
+  .nes-dialog .nes-btn {
+    margin-right: -110px;
+    margin-top: -40px;
+  }

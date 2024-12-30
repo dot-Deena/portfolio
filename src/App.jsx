@@ -7,7 +7,8 @@ import Projects from './components/Projects/Projects.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Time from './components/Time/Time.jsx';
 import Intro from './components/Intro.jsx/Intro.jsx';
-
+import Pokeball from './components/Pokeball/Pokeball.jsx';
+import ViewCounter from './components/ViewCounter/ViewCounter.jsx';
 function App() {
   const [activeComponent, setActiveComponent] = useState('home'); 
   const [showIntro, setShowIntro] = useState(true); 
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div className="App">
+      <Pokeball/>
       <header className="app-header">
         <Time/>
         <div className="buttons">
@@ -37,6 +39,7 @@ function App() {
           <button className="nes-btn is-success" onClick={() => setActiveComponent('projects')}>Projects</button>
           <button className="nes-btn is-success" onClick={() => setActiveComponent('contact')}>Contact</button>
         </div>
+       <ViewCounter/>
       </header>
 
       <footer className="app-footer">
