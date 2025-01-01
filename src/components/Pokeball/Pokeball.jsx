@@ -42,7 +42,7 @@ function Pokeball() {
             <p className="title">Fun Fact</p>
             <p className='randomfact'>{randomFact}</p>
             <menu className="dialog-menu">
-              <button className="nes-btn" onClick={handleCloseDialog}>></button>
+              <button className="nes-btn" onClick={handleCloseDialog}>{" >"}</button>
             </menu>
           </form>
         </dialog>
