@@ -70,6 +70,7 @@
         font-family: 'Press Start 2P', cursive;
         display: block; 
         margin: 50px auto; 
+        margin-bottom: -30px;
 
 }
 .project-list h2{
@@ -78,3 +79,47 @@
     margin-top: 40px;
     font-size: 30px;
 }
+.bubble-speeches  {
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+.project-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .project-balloon {
+    position: absolute;
+    top: 110%; 
+    left: 190%; 
+    transform: translateY(-50%); /* Center the balloon vertically */
+    width: 500px; /* Set a larger width for the balloon */
+  }
+  
+  .project-balloon .nes-balloon {
+    width: 100%; 
+    text-align: left; 
+    margin-bottom: -300px;
+    margin-top: -500px;
+  }
+  
+  .close-button {
+    margin-top: -100px;
+    margin-left: 600px;
+    
+  }
+
+  .nes-btn.btn-3{
+    margin-top: 100px;
+  }
+  .nes-btn.btn-2{
+    margin-top: -100px;
+  }
+  .under-construction img {
+    margin-right:50px;
+    margin-left:500px;
+    width: 500px;
+    height: 500px;
+    margin-top: -400px;
+  }

@@ -21,7 +21,7 @@ function Homepage() {
         {/* Left side (30%) */}
         <div className="left-side">
           <div className="profile-picture">
-            <img src="src/assets/pfp.jpeg" alt="Your Name" />
+            <img src="src/assets/fire2.gif" alt="fire" />
           </div>
           {/* Button to open the dialog */}
           <section>

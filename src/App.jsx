@@ -49,9 +49,9 @@ function App() {
           <i class="nes-icon github is-medium"></i></a>
           <a href="https://www.instagram.com/icvntt" target="_blank" rel="noopener noreferrer">
           <i class="nes-icon instagram is-medium"></i></a>
-          <a href="https://www.linkedin.com/in/deena-sreshta/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/deena-dummy/" target="_blank" rel="noopener noreferrer">
           <i class="nes-icon linkedin is-medium"></i></a>
-          <a href="intideenasreshta@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a href="deena@gmail.com" target="_blank" rel="noopener noreferrer">
           <i class="nes-icon gmail is-medium"></i></a>
           <a href="https://www.reddit.com/user/_xCHERRYBLUESx/" target="_blank" rel="noopener noreferrer">
           <i class="nes-icon reddit is-medium"></i></a>
