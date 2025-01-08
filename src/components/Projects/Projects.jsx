@@ -72,7 +72,7 @@ function Projects() {
                 </div>
               )}
               <div className='under-construction'>
-            <img src="src/assets/gif.gif" alt="gof" />
+            <img src="/assets/gif.gif" alt="gof" />
             </div>
             </section>
           </div>

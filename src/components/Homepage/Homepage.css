@@ -3,7 +3,7 @@
     min-height: 80vh;
     min-width: 145vh;
     background-color: #000000;
-    background-image: url("src/assets/kirby3.gif");
+    background-image: url("/assets/kirby3.gif");
     border-radius: 5px;
     margin-top: 1px;
     margin-bottom: 90px;
@@ -120,7 +120,7 @@ body {
 .nes-dialog {
   border-radius: 10px;
   padding: 30px;
-  background-image: url("src/assets/bric.jpeg");
+  background-image: url("/assets/bric.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

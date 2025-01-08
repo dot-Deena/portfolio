@@ -10,7 +10,7 @@
 }
 
 .app-header {
-  background-image: url("src/assets/back.gif");
+  background-image: url("/assets/back.gif");
   background-size: cover;
   background-position: center;
   padding: 10px;
@@ -54,7 +54,7 @@ body, html {
   left: 0;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  background-image: url("src/assets/back.gif");
+  background-image: url("/assets/back.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

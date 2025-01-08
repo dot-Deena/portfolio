@@ -21,7 +21,7 @@ function Homepage() {
         {/* Left side (30%) */}
         <div className="left-side">
           <div className="profile-picture">
-            <img src="src/assets/fire2.gif" alt="fire" />
+            <img src="/assets/fire2.gif" alt="fire" />
           </div>
           {/* Button to open the dialog */}
           <section>
@@ -31,17 +31,17 @@ function Homepage() {
               <dialog className="nes-dialog" open>
                 <form method="dialog">
                   <div className="skills-dialog">
-                    <img src="src/assets/html.png" alt="HTML" />
-                    <img src="src/assets/css.png" alt="CSS" />
-                    <img src="src/assets/js.png" alt="JavaScript" />
-                    <img src="src/assets/react.png" alt="React" />
-                    <img src="src/assets/git.png" alt="Git" />
-                    <img src="src/assets/github.png" alt="GitHub" />
-                    <img src="src/assets/mongo.png" alt="MongoDB" />
-                    <img src="src/assets/python.png" alt="Python" />
-                    <img src="src/assets/c.png" alt="C" />
-                    <img src="src/assets/npm.png" alt="NPM" />
-                    <img src="src/assets/node.png" alt="Node.js" />
+                    <img src="/assets/html.png" alt="HTML" />
+                    <img src="/assets/css.png" alt="CSS" />
+                    <img src="/assets/js.png" alt="JavaScript" />
+                    <img src="/assets/react.png" alt="React" />
+                    <img src="/assets/git.png" alt="Git" />
+                    <img src="/assets/github.png" alt="GitHub" />
+                    <img src="/assets/mongo.png" alt="MongoDB" />
+                    <img src="/assets/python.png" alt="Python" />
+                    <img src="/assets/c.png" alt="C" />
+                    <img src="/assets/npm.png" alt="NPM" />
+                    <img src="/assets/node.png" alt="Node.js" />
                     </div>
                   <menu className="dialog-menu">
                     <button className="nes-btn is-warning" onClick={closeDialog}>Close</button>
